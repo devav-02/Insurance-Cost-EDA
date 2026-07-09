@@ -1,178 +1,290 @@
-<h1 align="center">🏥 Insurance Cost EDA</h1>
+<div align="center">
 
-<p align="center">
-Exploratory Data Analysis and Data Preprocessing on the Medical Insurance Dataset using Python.
-</p>
+# 🏥 Medical Insurance Cost Prediction
 
-<p align="center">
-<img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python">
-<img src="https://img.shields.io/badge/Pandas-Data%20Analysis-yellow?style=for-the-badge&logo=pandas">
-<img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-blue?style=for-the-badge&logo=numpy">
-<img src="https://img.shields.io/badge/Matplotlib-Visualization-orange?style=for-the-badge">
-<img src="https://img.shields.io/badge/Seaborn-EDA-success?style=for-the-badge">
-</p>
+### *Exploratory Data Analysis • Feature Engineering • Data Preprocessing • Machine Learning*
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=24&duration=3500&pause=1000&color=00BFFF&center=true&vCenter=true&width=900&lines=Medical+Insurance+Cost+Prediction;Exploratory+Data+Analysis+(EDA);Feature+Engineering;Feature+Selection;Feature+Scaling;Machine+Learning+Pipeline;Python+%7C+Pandas+%7C+Scikit-Learn" />
 
 ---
 
-# 📌 Project Overview
+<img src="https://img.shields.io/github/stars/devav-02/Insurance-Cost-EDA?style=for-the-badge&logo=github&color=yellow" />
+<img src="https://img.shields.io/github/forks/devav-02/Insurance-Cost-EDA?style=for-the-badge&logo=github&color=blue" />
+<img src="https://img.shields.io/github/license/devav-02/Insurance-Cost-EDA?style=for-the-badge&color=green" />
+<img src="https://img.shields.io/github/repo-size/devav-02/Insurance-Cost-EDA?style=for-the-badge&color=orange" />
+<img src="https://img.shields.io/github/last-commit/devav-02/Insurance-Cost-EDA?style=for-the-badge&color=red" />
 
-This project focuses on performing **Exploratory Data Analysis (EDA)** and **Data Preprocessing** on a Medical Insurance Cost dataset.
+<br><br>
 
-The objective is to understand the dataset, identify patterns, clean the data, visualize important relationships, and prepare the dataset for future Machine Learning models.
+<img src="https://img.shields.io/badge/Python-3.12-blue?style=flat-square&logo=python"/>
+<img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=flat-square&logo=pandas"/>
+<img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?style=flat-square&logo=numpy"/>
+<img src="https://img.shields.io/badge/Matplotlib-Visualization-orange?style=flat-square"/>
+<img src="https://img.shields.io/badge/Seaborn-Statistical%20Plots-4C72B0?style=flat-square"/>
+<img src="https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?style=flat-square&logo=scikitlearn"/>
+<img src="https://img.shields.io/badge/SciPy-Statistics-8CAAE6?style=flat-square&logo=scipy"/>
+<img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat-square&logo=jupyter"/>
+<img src="https://img.shields.io/badge/VS%20Code-IDE-007ACC?style=flat-square&logo=visualstudiocode"/>
 
-This repository currently contains the complete EDA pipeline along with initial preprocessing and feature engineering.
+</div>
+
+---
+
+# 🌟 Project Overview
+
+Medical insurance costs are influenced by numerous demographic and lifestyle factors including **age**, **BMI**, **smoking habits**, **region**, **gender**, and **family size**.
+
+The primary objective of this project is to perform a comprehensive **Exploratory Data Analysis (EDA)**, apply **Data Preprocessing**, engineer meaningful features, and prepare the dataset for building robust **Machine Learning Regression Models** capable of accurately predicting individual medical insurance charges.
+
+Rather than jumping directly into model training, this repository emphasizes understanding the dataset through visualizations, statistical analysis, feature engineering, categorical encoding, feature scaling, and feature selection to build a strong foundation for predictive modeling.
+
+---
+
+# 🎯 Project Objectives
+
+- 📊 Perform comprehensive Exploratory Data Analysis (EDA)
+- 🧹 Clean and preprocess raw insurance data
+- 🔍 Discover hidden patterns and relationships
+- ⚙️ Engineer meaningful predictive features
+- 🔄 Encode categorical variables
+- 📈 Apply feature scaling techniques
+- 📉 Perform feature selection using Pearson Correlation
+- 🤖 Prepare data for Machine Learning regression models
+- 📋 Build a reusable preprocessing workflow
+
+---
+
+# ✨ Project Highlights
+
+| Feature | Status |
+|:--------:|:------:|
+| 📥 Dataset Loading | ✅ Completed |
+| 🔍 Data Inspection | ✅ Completed |
+| 📊 Exploratory Data Analysis | ✅ Completed |
+| 📈 Statistical Analysis | ✅ Completed |
+| 🧹 Data Cleaning | ✅ Completed |
+| 🧠 Feature Engineering | ✅ Completed |
+| 🔄 One-Hot Encoding | ✅ Completed |
+| 📉 Feature Selection | ✅ Completed |
+| ⚖️ Feature Scaling | ✅ Completed |
+| 🤖 Machine Learning Models | 🚧 In Progress |
+
+---
+
+# 📚 Table of Contents
+
+- 📌 Project Overview
+- 🎯 Project Objectives
+- 📂 Dataset Information
+- 🛠 Technology Stack
+- 📊 Exploratory Data Analysis
+- 🧹 Data Cleaning
+- ⚙️ Feature Engineering
+- 🔄 Feature Encoding
+- 📉 Feature Selection
+- ⚖️ Feature Scaling
+- 📁 Repository Structure
+- 🚀 Workflow
+- 📈 Current Progress
+- 🔮 Future Improvements
+- 💻 Installation
+- ▶️ Usage
+- 👨‍💻 Author
+
+---
+
+<div align="center">
+
+### ⭐ If you find this project useful, don't forget to leave a Star!
+
+</div>
 
 ---
 
 # 📂 Dataset Information
 
-| Feature | Description |
-|----------|-------------|
-| Age | Age of the policy holder |
-| Sex | Gender |
-| BMI | Body Mass Index |
-| Children | Number of Children Covered |
-| Smoker | Smoking Status |
-| Region | Residential Region |
-| Charges | Medical Insurance Cost |
+<div align="center">
 
-Dataset Size
+| Property | Details |
+|:---------|:--------|
+| 📄 Dataset | Medical Insurance Cost Dataset |
+| 👥 Total Records | **1,338** |
+| 📊 Total Features | **7 Input Features + 1 Target Variable** |
+| 🎯 Target Variable | **Charges** |
+| 📌 Problem Type | **Regression** |
+| 🤖 Machine Learning Task | Predict Individual Medical Insurance Charges |
 
-- **Rows :** 1338
-- **Columns :** 7
+</div>
 
 ---
 
-# 🚀 Project Workflow
+# 📋 Dataset Features
 
-```
-Import Libraries
-        │
-        ▼
-Load Dataset
-        │
-        ▼
+| Feature | Data Type | Description |
+|----------|-----------|-------------|
+| 👤 **Age** | Numerical | Age of the insured individual |
+| 🚻 **Sex** | Categorical | Gender of the policy holder |
+| ⚖️ **BMI** | Numerical | Body Mass Index |
+| 👨‍👩‍👧 **Children** | Numerical | Number of dependent children |
+| 🚬 **Smoker** | Categorical | Smoking status (Yes / No) |
+| 🌍 **Region** | Categorical | Residential region in the US |
+| 💰 **Charges** | Numerical | Annual medical insurance cost *(Target Variable)* |
+
+---
+
+# 🎯 Project Scope
+
+This project follows a complete **Machine Learning data preparation pipeline** before model training.
+
+```text
+Raw Dataset
+      │
+      ▼
 Dataset Inspection
-        │
-        ▼
-Statistical Analysis
-        │
-        ▼
-Missing Value Analysis
-        │
-        ▼
-Data Visualization
-        │
-        ▼
-Correlation Analysis
-        │
-        ▼
+      │
+      ▼
+Exploratory Data Analysis
+      │
+      ▼
 Data Cleaning
-        │
-        ▼
+      │
+      ▼
 Feature Engineering
+      │
+      ▼
+Categorical Encoding
+      │
+      ▼
+Feature Selection
+      │
+      ▼
+Feature Scaling
+      │
+      ▼
+Machine Learning Models
 ```
 
 ---
 
-# 📊 Exploratory Data Analysis
+# 🛠️ Technology Stack
 
-The following analyses have been completed:
+## 💻 Programming Language
 
-- Dataset Overview
-- Shape Inspection
-- Data Types Inspection
-- Statistical Summary
-- Missing Value Analysis
-- Duplicate Record Detection
-- Histograms
-- KDE Distribution Plots
-- Count Plots
-- Boxplots
-- Correlation Heatmap
+| Technology | Purpose |
+|------------|---------|
+| 🐍 Python | Core Programming Language |
 
 ---
 
-# 🧹 Data Cleaning
+## 📊 Data Analysis
 
-The preprocessing stage includes
-
-- Duplicate Removal
-- Data Type Verification
-- Clean Dataset Creation
-- Initial Feature Engineering
+| Library | Purpose |
+|---------|---------|
+| Pandas | Data Manipulation |
+| NumPy | Numerical Computing |
 
 ---
 
-# ⚙️ Feature Engineering
+## 📈 Data Visualization
 
-Current Progress
-
-- Label Encoding (Started)
-- Categorical Feature Inspection
-- Value Count Analysis
+| Library | Purpose |
+|---------|---------|
+| Matplotlib | Static Visualizations |
+| Seaborn | Statistical Visualizations |
 
 ---
 
-# 🛠 Tech Stack
+## 🤖 Machine Learning
 
-| Category | Technologies |
-|-----------|--------------|
-| Language | Python |
-| Data Analysis | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
-| Notebook | Jupyter Notebook |
-| IDE | Google Colab |
+| Library | Purpose |
+|---------|---------|
+| Scikit-Learn | Data Preprocessing & ML |
+| SciPy | Statistical Analysis |
+
+---
+
+## 🧰 Development Environment
+
+| Tool | Purpose |
+|------|---------|
+| VS Code | IDE |
+| Jupyter Notebook | Interactive Development |
+| Git | Version Control |
+| GitHub | Project Hosting |
+
+---
+
+# ⚡ Technologies Used
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=python,vscode,git,github"/>
+
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+<img src="https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white"/>
+
+</p>
 
 ---
 
 # 📁 Repository Structure
 
-```
-Insurance-Cost-EDA
+```text
+📦 Insurance-Cost-EDA
 │
-├── INSURANCE_EDA.ipynb
-├── README.md
+├── 📄 INSURANCE_EDA.ipynb
+│      ├── 📊 Exploratory Data Analysis
+│      ├── 🧹 Data Cleaning
+│      ├── ⚙️ Feature Engineering
+│      ├── 🔄 One-Hot Encoding
+│      ├── 📉 Feature Selection
+│      └── ⚖️ Feature Scaling
+│
+├── 📄 README.md
+│
+├── 📄 requirements.txt
+│
+└── 📂 Dataset
+       └── insurance.csv
 ```
 
 ---
 
-# 📈 Current Status
+# 📌 Dataset Summary
 
-✅ Data Loading
-
-✅ Exploratory Data Analysis
-
-✅ Data Cleaning
-
-✅ Duplicate Removal
-
-✅ Correlation Analysis
-
-✅ Initial Feature Engineering
-
-🚧 Machine Learning (Coming Soon)
+| Metric | Value |
+|:-------|------:|
+| 📄 Records | **1338** |
+| 📊 Features | **7** |
+| 🎯 Target Variable | **Charges** |
+| ❌ Missing Values | **0** |
+| 🔁 Duplicate Records | **1** *(Removed during preprocessing)* |
+| 🧹 Dataset Status | **Clean & Ready for Machine Learning** |
 
 ---
 
-# 🔮 Future Improvements
+<div align="center">
 
-- Complete Feature Engineering
-- One-Hot Encoding
-- Feature Scaling
-- Model Training
-- Model Evaluation
-- Prediction Pipeline
-- Performance Comparison
+## 🚀 Data Successfully Prepared for Machine Learning
 
----
+<img src="https://img.shields.io/badge/Data%20Cleaning-Completed-success?style=for-the-badge"/>
 
-# 👨‍💻 Author
+<img src="https://img.shields.io/badge/EDA-Completed-blue?style=for-the-badge"/>
 
-**Abhishek Vishwakarma**
+<img src="https://img.shields.io/badge/Feature%20Engineering-Completed-orange?style=for-the-badge"/>
 
-Aspiring AI Engineer | Machine Learning Enthusiast | Generative AI Developer
+<img src="https://img.shields.io/badge/Feature%20Scaling-Completed-brightgreen?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Machine%20Learning-Coming%20Soon-red?style=for-the-badge"/>
+
+</div>
 
 ---
-
-⭐ If you found this project useful, consider giving it a Star.
