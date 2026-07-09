@@ -288,3 +288,226 @@ Machine Learning Models
 </div>
 
 ---
+# 📊 Exploratory Data Analysis (EDA)
+
+Exploratory Data Analysis (EDA) was performed to understand the structure, quality, and relationships within the dataset before applying machine learning techniques.
+
+The analysis helped identify data distributions, detect duplicate records, inspect categorical variables, discover feature correlations, and uncover hidden insights that influence medical insurance charges.
+
+---
+
+## 📌 EDA Checklist
+
+| Analysis | Status |
+|:---------|:------:|
+| 📄 Dataset Overview | ✅ |
+| 📐 Shape Inspection | ✅ |
+| 🏷️ Data Type Analysis | ✅ |
+| 📈 Statistical Summary | ✅ |
+| 🔍 Missing Value Analysis | ✅ |
+| 🔁 Duplicate Detection | ✅ |
+| 📊 Distribution Analysis | ✅ |
+| 📦 Box Plot Analysis | ✅ |
+| 🔥 Correlation Heatmap | ✅ |
+| 📉 Feature Relationship Analysis | ✅ |
+
+---
+
+## 📈 Visualizations Performed
+
+- 📊 Histograms
+- 📈 KDE Distribution Plots
+- 📦 Boxplots
+- 📊 Count Plots
+- 🔥 Correlation Heatmap
+- 📉 Pairwise Feature Analysis
+- 📊 Target Variable Distribution
+
+---
+
+# 🧹 Data Cleaning
+
+Before building any Machine Learning model, the dataset was cleaned to improve data quality and consistency.
+
+### ✔️ Cleaning Steps
+
+- Removed duplicate records
+- Verified data types
+- Checked missing values
+- Created a clean working dataset
+- Prepared data for preprocessing
+
+---
+
+# ⚙️ Feature Engineering
+
+Feature Engineering was performed to transform raw data into more informative features that can improve model performance.
+
+### Implemented Features
+
+| Feature | Description |
+|----------|-------------|
+| 🏥 BMI Categories | Converted continuous BMI into health categories |
+| 🚻 Sex Encoding | Converted categorical values into numerical representation |
+| 🚬 Smoker Encoding | Encoded smoking status |
+| 🌍 Region Encoding | One-Hot Encoded residential region |
+
+---
+
+## BMI Categories
+
+BMI values were grouped into meaningful health categories:
+
+| BMI Range | Category |
+|-----------|----------|
+| < 18.5 | Underweight |
+| 18.5 – 24.9 | Normal |
+| 25 – 29.9 | Overweight |
+| ≥ 30 | Obesity |
+
+This transformation allows the model to learn relationships based on health risk groups rather than only raw BMI values.
+
+---
+
+# 🔄 Categorical Encoding
+
+Machine Learning algorithms cannot directly process categorical text values.
+
+One-Hot Encoding was applied to transform categorical features into binary numerical representations.
+
+### Encoded Features
+
+- ✅ Sex
+- ✅ Smoker
+- ✅ Region
+- ✅ BMI Categories
+
+Example:
+
+| Smoker | smoker_yes |
+|---------|------------|
+| No | 0 |
+| Yes | 1 |
+
+---
+
+# 📉 Feature Selection
+
+To understand the importance of each feature, **Pearson Correlation Analysis** was performed.
+
+The correlation coefficient measures the strength of the linear relationship between each feature and the target variable (**Charges**).
+
+### Correlation Interpretation
+
+| Correlation | Interpretation |
+|-------------|----------------|
+| +1 | Strong Positive Relationship |
+| 0 | No Linear Relationship |
+| -1 | Strong Negative Relationship |
+
+Features with stronger correlations provide more predictive information for the regression model.
+
+---
+
+# ⚖️ Feature Scaling
+
+Feature Scaling was applied to normalize numerical features before model training.
+
+Scaling ensures that features with larger numerical ranges do not dominate those with smaller ranges.
+
+### Applied Technique
+
+- ✅ StandardScaler
+
+Scaled Numerical Features:
+
+- Age
+- BMI
+- Children
+
+---
+
+# 🔄 Complete Data Processing Pipeline
+
+```text
+Medical Insurance Dataset
+            │
+            ▼
+Dataset Inspection
+            │
+            ▼
+Exploratory Data Analysis
+            │
+            ▼
+Data Cleaning
+            │
+            ▼
+Feature Engineering
+            │
+            ▼
+Categorical Encoding
+            │
+            ▼
+Feature Selection
+            │
+            ▼
+Feature Scaling
+            │
+            ▼
+Machine Learning Model (Next Phase)
+```
+
+---
+
+# 📈 Current Project Progress
+
+| Stage | Progress |
+|:------|:--------:|
+| 📥 Dataset Loading | ✅ |
+| 📊 Exploratory Data Analysis | ✅ |
+| 🧹 Data Cleaning | ✅ |
+| ⚙️ Feature Engineering | ✅ |
+| 🔄 One-Hot Encoding | ✅ |
+| 📉 Feature Selection | ✅ |
+| ⚖️ Feature Scaling | ✅ |
+| ✂️ Train-Test Split | 🚧 |
+| 🤖 Model Training | 🚧 |
+| 📈 Model Evaluation | 🚧 |
+| 🚀 Deployment | ⏳ Planned |
+
+---
+
+# 🚀 Future Roadmap
+
+The next phase of the project will include:
+
+- ✂️ Train-Test Split
+- 📈 Linear Regression
+- 🌲 Decision Tree Regressor
+- 🌳 Random Forest Regressor
+- 🚀 Gradient Boosting
+- ⚡ XGBoost Regressor
+- 📊 Model Performance Comparison
+- 📉 Error Analysis
+- 🎯 Hyperparameter Tuning
+- 💾 Model Serialization
+- 🌐 Deployment using Streamlit
+
+---
+
+# 👨‍💻 Author
+
+## Abhishek Vishwakarma
+
+**Aspiring AI Engineer | Machine Learning Enthusiast | Generative AI Developer**
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project helpful, consider giving it a Star!
+
+**Thank you for visiting this repository ❤️**
+
+</div>
+
