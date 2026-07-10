@@ -5,15 +5,7 @@
 ### *Exploratory Data Analysis • Feature Engineering • Data Preprocessing • Machine Learning*
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=24&duration=3500&pause=1000&color=00BFFF&center=true&vCenter=true&width=900&lines=Medical+Insurance+Cost+Prediction;Exploratory+Data+Analysis+(EDA);Feature+Engineering;Feature+Selection;Feature+Scaling;Machine+Learning+Pipeline;Python+%7C+Pandas+%7C+Scikit-Learn" />
-
 ---
-
-<img src="https://img.shields.io/github/stars/devav-02/Insurance-Cost-EDA?style=for-the-badge&logo=github&color=yellow" />
-<img src="https://img.shields.io/github/forks/devav-02/Insurance-Cost-EDA?style=for-the-badge&logo=github&color=blue" />
-<img src="https://img.shields.io/github/license/devav-02/Insurance-Cost-EDA?style=for-the-badge&color=green" />
-<img src="https://img.shields.io/github/repo-size/devav-02/Insurance-Cost-EDA?style=for-the-badge&color=orange" />
-<img src="https://img.shields.io/github/last-commit/devav-02/Insurance-Cost-EDA?style=for-the-badge&color=red" />
-
 <br><br>
 
 <img src="https://img.shields.io/badge/Python-3.12-blue?style=flat-square&logo=python"/>
